@@ -194,7 +194,7 @@ ul.nav-bar-2 {
     flex-direction: row;
     padding: 0 22% 0 22%;
 
-    color: #8f8f90;
+    color: black;
 
     align-items: center;
     justify-content: space-between;
@@ -207,9 +207,14 @@ ul.nav-bar-2 {
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,8,42,1) 0%, rgba(173,173,175,1) 0%, rgba(68,194,219,1) 100%, rgba(9,8,42,1) 100%); 
 }
 
+.nav-link1{
+    color: black;
+}
+
 .container{
     margin-left: 0;
-    background-color: white;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,8,42,1) 0%, rgba(173,173,175,1) 0%, rgba(68,194,219,1) 100%, rgba(9,8,42,1) 100%); 
 }
 
 .navbar{
@@ -258,29 +263,34 @@ ul.nav-bar-2 {
 .section {
     background-color: #ffffff;
     height: 90%;
+    padding: 0;
 }
 
 .section div {
     margin-top: 25px;
+    width: fit-content;
 }
 
 .section ul {
     list-style-type: none;
+    width: fit-content;
+
 }
 
 .section ul li {
     margin-left: 40px;
     margin-top: 15px;
+    width: fit-content;
+
 }
 
 .sect {
-    margin-left: 25px;
 
     font-size: 25px;
     font-weight: bold;
     font-style: normal;
-
-    margin-left: 40px;
+    width: fit-content;
+    padding: 25px;
 }
 
 .section ul li:hover {
@@ -463,6 +473,7 @@ ul.nav-bar-2 {
     text-align: center;
     color: white;
     margin-bottom: 5px;
+
 }
 
 .right_bar img{
@@ -488,7 +499,7 @@ ul.nav-bar-2 {
     background-color: white;
     flex-direction: row;
     margin: auto;
-    padding: 20px;
+    padding: 32px;
 }
 
 .name_of_section div{
@@ -552,7 +563,7 @@ ul.nav-bar-2 {
 
 .container_main .section{
     display: inline-block;
-    width: 20%;
+    width: fit-content;
     position: absolute;
     top: 0;
     left:0;
@@ -561,7 +572,7 @@ ul.nav-bar-2 {
 
 .container_main .main_section{
     display: inline-block;
-    width: 20%;
+    width: 24%;
     position: absolute;
     top: 0;
     left: 10%;
@@ -573,7 +584,7 @@ ul.nav-bar-2 {
     width: 30%;
     position: absolute;
     top: 0;
-    right: 43.5%;
+    right: 42.5%;
     background-color: none;
 }
 
@@ -583,14 +594,22 @@ ul.nav-bar-2 {
 
 body{
     position: relative;
+    height: 1500px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,8,42,1) 0%, rgba(173,173,175,1) 0%, rgba(68,194,219,1) 100%, rgba(9,8,42,1) 100%); }
+
+@media (max-width: 1200px) {
+    body{
+        height: 2000px;
+    }
 }
 
 .footer {
     position: absolute;
-    flex: auto;
     background-color: brown;
     width: 100%;
     bottom: 0;
+    height: 100px
 }
 
 .footer_content{
