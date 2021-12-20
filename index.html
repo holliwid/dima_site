@@ -9,8 +9,11 @@
     <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
@@ -42,39 +45,47 @@
     </ul>
 
     <div class="container">
-		<nav class="navbar navbar-light">
-			<button type="button" class="btn btn-outline-info toggle-menu-btn">Батон</button>
-				<a class="nav-link1" href="#">ГЛАВНАЯ</a>
-				<a class="nav-link1" href="#">НОВИНКИ</a>
-				<a class="nav-link1" href="#">ПРЕДЗАКАЗ</a>
-				<a class="nav-link1" href="#">СКИДКИ</a>
-				<a class="nav-link1" href="#">ИСПЫТАЙ УДАЧИ</a>
-		</nav>
-	</div>
-    <div class="greed">
-        <div id="slider" class="slider">
-            <img class="slider_slide slider_slide_inactive" style="background-image: url(./img/hollow_knight.jpg)" />
-            <img class="slider_slide slider_slide_inactive" style="background-image: url(./img/silksong.jpg)" />
-            <img class="slider_slide slider_slide_active" style="background-image: url(./img/street_fighter.jpeg)" />
-            <button class="left_btn_slider slider_button" onclick="slideChange('slider','left')">&#10094;</button>
-            <button class="right_btn_slider slider_button" onclick="slideChange('slider','right')">
-                &#10095;
-            </button>
+        <nav class="navbar navbar-light">
+            <button type="button" class="btn btn-outline-info toggle-menu-btn">Батон</button>
+            <a class="nav-link1" href="#">ГЛАВНАЯ</a>
+            <a class="nav-link1" href="#">НОВИНКИ</a>
+            <a class="nav-link1" href="#">ПРЕДЗАКАЗ</a>
+            <a class="nav-link1" href="#">СКИДКИ</a>
+            <a class="nav-link1" href="#">ИСПЫТАЙ УДАЧИ</a>
+        </nav>
+    </div>
+    <div class="container_slider">
+        <div>
+            <div id="slider" class="slider">
+                <img class="slider_slide slider_slide_inactive"
+                    style="background-image: url(./img/hollow_knight.jpg)" />
+                <img class="slider_slide slider_slide_inactive" style="background-image: url(./img/silksong.jpg)" />
+                <img class="slider_slide slider_slide_active"
+                    style="background-image: url(./img/street_fighter.jpeg)" />
+                <button class="left_btn_slider slider_button" onclick="slideChange('slider','left')">&#10094;</button>
+                <button class="right_btn_slider slider_button" onclick="slideChange('slider','right')">
+                    &#10095;
+                </button>
+            </div>
+            <div id="actions" class="actions">
+                <div>
+                    <div class="game_with_action">
+                        <img src="./img/street_fighter.jpeg" alt="" />
+                        <div class="text">text</div>
+                    </div>
+                    <div class="game_with_action">
+                        <img src="./img/street_fighter.jpeg" alt="" />
+                        <div class="text">text</div>
+                    </div>
+                    <div class="game_with_action">
+                        <img src="./img/street_fighter.jpeg" alt="" />
+                        <div class="text">text</div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="actions">
-            <div class="game_with_action">
-                <img src="./img/street_fighter.jpeg" alt="" />
-                <div class="text">text</div>
-            </div>
-            <div class="game_with_action">
-                <img src="./img/street_fighter.jpeg" alt="" />
-                <div class="text">text</div>
-            </div>
-            <div class="game_with_action">
-                <img src="./img/street_fighter.jpeg" alt="" />
-                <div class="text">text</div>
-            </div>
-        </div>
+    </div>
+    <div class="container_main">
         <div id="section" class="section">
             <div>
                 <i class="sect"> РАЗДЕЛЫ </i>
@@ -88,7 +99,9 @@
         <div id="main_section" class="main_section">
             <canvas id="canvas" class="canvas"></canvas>
             <div class="animate-gradient"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem totam repudiandae voluptatum unde natus autem molestias deleniti beatae. Magni est error tenetur autem incidunt quod, in a ut ratione nisi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem totam repudiandae voluptatum unde
+                natus autem molestias deleniti beatae. Magni est error tenetur autem incidunt quod, in a ut ratione
+                nisi?</p>
             <div class="grid">
                 <div class="grid-tr">
                     <div class="grid-td">
@@ -114,41 +127,151 @@
                 </div>
             </div>
         </div>
-        <div id="right_bar">
-            <div class="name_of_section">
-                <img src="./img/gift.png" alt="" />
-                <div>РАЗДАЧИ ИГР И СКИНОВ</div>
-            </div>
+        <div id="right_bar" class="right_bar">
+            <div class="con">
+                <div class="name_of_section">
+                    <img src="./img/gift.png" alt="" />
+                    <div>РАЗДАЧИ ИГР И СКИНОВ</div>
+                </div>
 
-            <div class="right_bar">
-                <img src="./img/street_fighter.jpeg" alt="" />
-                <div class="right_bar_text">text</div>
-            </div>
+                <div class="right_bar">
+                    <img src="./img/street_fighter.jpeg" alt="" />
+                    <div class="right_bar_text">text</div>
+                </div>
 
-            <div class="right_bar">
-                <img src="./img/street_fighter.jpeg" alt="" />
-                <div class="right_bar_text">text</div>
-            </div>
+                <div class="right_bar">
+                    <img src="./img/street_fighter.jpeg" alt="" />
+                    <div class="right_bar_text">text</div>
+                </div>
 
-            <div class="right_bar">
-                <img src="./img/street_fighter.jpeg" alt="" />
-                <div class="right_bar_text">text</div>
-            </div>
+                <div class="right_bar">
+                    <img src="./img/street_fighter.jpeg" alt="" />
+                    <div class="right_bar_text">text</div>
+                </div>
 
-            <div class="right_bar">
-                <img src="./img/street_fighter.jpeg" alt="" />
-                <div class="right_bar_text">text</div>
+                <div class="right_bar">
+                    <img src="./img/street_fighter.jpeg" alt="" />
+                    <div class="right_bar_text">text</div>
+                </div>
             </div>
         </div>
-        <div class="footer" id="footer">
-            <div class="footer_content">
-                <div>FOOTER</div>
-            </div>
+    </div>
+    <div class="footer" id="footer">
+        <div class="footer_content">
+            <div>FOOTER</div>
         </div>
     </div>
 
 
+
+
+
+
+
+
+
+    <!-- <div class="greed">
+            <div id="slider" class="slider">
+                <img class="slider_slide slider_slide_inactive"
+                    style="background-image: url(./img/hollow_knight.jpg)" />
+                <img class="slider_slide slider_slide_inactive" style="background-image: url(./img/silksong.jpg)" />
+                <img class="slider_slide slider_slide_active"
+                    style="background-image: url(./img/street_fighter.jpeg)" />
+                <button class="left_btn_slider slider_button" onclick="slideChange('slider','left')">&#10094;</button>
+                <button class="right_btn_slider slider_button" onclick="slideChange('slider','right')">
+                    &#10095;
+                </button>
+            </div>
+            <div id="actions">
+                <div class="game_with_action">
+                    <img src="./img/street_fighter.jpeg" alt="" />
+                    <div class="text">text</div>
+                </div>
+                <div class="game_with_action">
+                    <img src="./img/street_fighter.jpeg" alt="" />
+                    <div class="text">text</div>
+                </div>
+                <div class="game_with_action">
+                    <img src="./img/street_fighter.jpeg" alt="" />
+                    <div class="text">text</div>
+                </div>
+            </div>
+            <div id="section" class="section">
+                <div>
+                    <i class="sect"> РАЗДЕЛЫ </i>
+                </div>
+                <ul class="left-menu-section">
+                    <li>Steam</li>
+                    <li>Origin</li>
+                    <li>Uplay</li>
+                </ul>
+            </div>
+            <div id="main_section" class="main_section">
+                <canvas id="canvas" class="canvas"></canvas>
+                <div class="animate-gradient"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem totam repudiandae voluptatum unde
+                    natus autem molestias deleniti beatae. Magni est error tenetur autem incidunt quod, in a ut ratione
+                    nisi?</p>
+                <div class="grid">
+                    <div class="grid-tr">
+                        <div class="grid-td">
+                            <div class="item">Блок №1</div>
+                        </div>
+                        <div class="grid-td">
+                            <div class="item">Блок №2</div>
+                        </div>
+                        <div class="grid-td">
+                            <div class="item">Блок №3</div>
+                        </div>
+                    </div>
+                    <div class="grid-tr">
+                        <div class="grid-td">
+                            <div class="item">Блок №4</div>
+                        </div>
+                        <div class="grid-td">
+                            <div class="item">Блок №5</div>
+                        </div>
+                        <div class="grid-td">
+                            <div class="item">Блок №6</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="right_bar">
+                <div class="name_of_section">
+                    <img src="./img/gift.png" alt="" />
+                    <div>РАЗДАЧИ ИГР И СКИНОВ</div>
+                </div>
+
+                <div class="right_bar">
+                    <img src="./img/street_fighter.jpeg" alt="" />
+                    <div class="right_bar_text">text</div>
+                </div>
+
+                <div class="right_bar">
+                    <img src="./img/street_fighter.jpeg" alt="" />
+                    <div class="right_bar_text">text</div>
+                </div>
+
+                <div class="right_bar">
+                    <img src="./img/street_fighter.jpeg" alt="" />
+                    <div class="right_bar_text">text</div>
+                </div>
+
+                <div class="right_bar">
+                    <img src="./img/street_fighter.jpeg" alt="" />
+                    <div class="right_bar_text">text</div>
+                </div>
+            </div>
+            <div class="footer" id="footer">
+                <div class="footer_content">
+                    <div>FOOTER</div>
+                </div>
+            </div>
+        </div> -->
+
+
     <script src="./main.js"></script>
-</body>
+    </body>
 
 </html>

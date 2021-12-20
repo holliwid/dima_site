@@ -462,7 +462,6 @@ ul.nav-bar-2 {
     position: relative;
     text-align: center;
     color: white;
-    background-color: black;
     margin-bottom: 5px;
 }
 
@@ -505,10 +504,93 @@ ul.nav-bar-2 {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container_slider{
+    display: block;
+    width: 100%;
+    padding: 0 22% 0 22%;
+}
+
+.container_slider .slider{
+    display: inline-block;
+    width: 60%;
+    height: 300px;
+}
+
+.container_slider .actions{
+    display: inline-block;
+    width: 30%;
+    height: fit-content;
+}
+
+.container_main{
+    display: block;
+    width: 100%;
+    margin: 0 22% 0 22%;
+    position: relative;
+    height: 800px;
+}
+
+.container_main .section{
+    display: inline-block;
+    width: 20%;
+    position: absolute;
+    top: 0;
+    left:0;
+}
+
+
+.container_main .main_section{
+    display: inline-block;
+    width: 20%;
+    position: absolute;
+    top: 0;
+    left: 10%;
+}
+
+.container_main .con{
+    color: black;
+    display: inline-block;
+    width: 30%;
+    position: absolute;
+    top: 0;
+    right: 43.5%;
+    background-color: none;
+}
+
+.name_of_section{
+    width: fit-content;
+}
+
+body{
+    position: relative;
+}
+
 .footer {
+    position: absolute;
     flex: auto;
     background-color: brown;
     width: 100%;
+    bottom: 0;
 }
 
 .footer_content{
@@ -521,5 +603,3 @@ ul.nav-bar-2 {
 .footer_content div{
     color: white;
 }
-
-
