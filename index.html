@@ -53,11 +53,11 @@
 	</div>
     <div class="greed">
         <div id="slider" class="slider">
-            <img class="mySlides" src="./img/hollow_knight.jpg" />
-            <img class="mySlides" src="./img/silksong.jpg" />
-            <img class="mySlides" src="./img/street_fighter.jpeg" />
-            <button class="left_btn_slider" onclick="plusDivs(-1)">&#10094;</button>
-            <button class="right_btn_slider" onclick="plusDivs(+1)">
+            <img class="slider_slide slider_slide_inactive" style="background-image: url(./img/hollow_knight.jpg)" />
+            <img class="slider_slide slider_slide_inactive" style="background-image: url(./img/silksong.jpg)" />
+            <img class="slider_slide slider_slide_active" style="background-image: url(./img/street_fighter.jpeg)" />
+            <button class="left_btn_slider slider_button" onclick="slideChange('slider','left')">&#10094;</button>
+            <button class="right_btn_slider slider_button" onclick="slideChange('slider','right')">
                 &#10095;
             </button>
         </div>
@@ -142,7 +142,7 @@
         </div>
         <div class="footer" id="footer">
             <div class="footer_content">
-                <div>Alexey Stepanov</div>
+                <div>FOOTER</div>
             </div>
         </div>
     </div>
