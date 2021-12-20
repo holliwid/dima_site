@@ -45,3 +45,6 @@ setInterval(function(){
 }, 20);
 
 
+$('.toggle-menu-btn').click((event) => {
+  $('.nav-link1').slideToggle('slow', () => {});
+});
